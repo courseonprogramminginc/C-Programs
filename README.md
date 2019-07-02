@@ -119,3 +119,9 @@ Simple program using if: [if](Day 3/if.c)
 1. [Declaring and using structure](Day 15/structFish.c)
 2. [Nested structures](Day 15/nestedStructures.c)
 3. [Updating structure fields](Day 15/turtleBirthday.c)
+
+## Day 16 Unions, Enum and Void pointers
+1. [Understanding Unions and Enumerations](Day 16/enum.c)
+2. [Struct, union and enum all at once](Day 16/fruitOrder.c)
+3. [Void pointer](Day 16/voidPointers.c)
+4. [Program for generic sum function (to debgug)](Day 16/genericSum.c)
