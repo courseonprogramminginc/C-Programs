@@ -124,3 +124,8 @@ Simple program using if: [if](Day%203/if.c)
 1. [Understanding Unions and Enumerations](Day%2016/enum.c)
 2. [Struct, union and enum all at once](Day%2016/fruitOrder.c)
 3. [Void pointer](Day%2016/voidPointers.c)
+
+## Day 17: Dynamic Memory Allocation
+
+1. [malloc function](Day%2017/malloc.c)
+2. [calloc function](Day%2017/calloc.c)

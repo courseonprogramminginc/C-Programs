@@ -2,27 +2,28 @@
  * Using void pointers to create a generic function
  */
 
-// TRY TO DEBUG THIS PROGRAM, IT GIVES INCORRECT OUTPUT
-
 #include <stdio.h>
 
 // add function takes in two numbers and prints the result
 // type = 1 => int, type = 2 => float
 void add(void *num1, void *num2, int type) {
 	if (type == 1) {
-		int val1 = *((int *)num1);
-		int val2 = *((int *)num2);
+		int val1 = *(int *)num1;
+		int val2 = *(int *)num2;
+		printf("val1: %d, val2: %d\n", val1, val2);
 		printf("The sum is: %d\n", val1 + val2);
 	} else if (type == 2) {
-		float val1 = *((float *)num1);
-		float val2 = *((float *)num2);
+		float val1 = *(float *)num1;
+		float val2 = *(float *)num2;
+		printf("val1: %f, val2: %f\n", val1, val2);
 		printf("The sum is: %f\n", val1 + val2);
 	}
 	return ;
 }
 
 int main () {
-	void *a, *b, *c, *d;
+	int *a, *b;
+	float *c, *d;
 
 	int num1 = 2;
 	a = &num1;
@@ -36,9 +37,14 @@ int main () {
 	d = &num2f;
 
 	// add two integers
-	add(&a, &b, 1);
+	add(&num1, &num2, 1);
+	
+	// add(&c, &d, 2) <= THIS IS INCORRECT
+	// as it will pass the address of pointers c and d themselves
+	// and not the address of num1f and num2f
+
 	// add two floats
-	add(&c, &d, 2);
+	add(c, d, 2);
 
 	return 0;
 }
