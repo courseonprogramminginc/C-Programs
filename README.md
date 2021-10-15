@@ -121,7 +121,7 @@ Simple program using if: [if](Day%203/if.c)
 3. [Updating structure fields](Day%2015/turtleBirthday.c)
 
 ## Day 16 Unions, Enum and Void pointers
-1. [Understanding Unions and Enumerations](Day%2016/enum.c)
+1. [Understanding Unions and Enumerations](Day%2016/enumAndUnion.c)
 2. [Struct, union and enum all at once](Day%2016/fruitOrder.c)
 3. [Void pointer](Day%2016/voidPointers.c)
 
